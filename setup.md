@@ -2,8 +2,16 @@
 title: Setup
 ---
 
+## MATLAB
 You will need to install MATLAB or [GNU Octave][gnu-octave] to do this lesson.
+Access MATLAB via [AppsAnywhere](https://apps.bham.ac.uk/) by launching MATLAB R2024a - (Core Application Only)
+  
+Or download via the [University of Birmingham Mathworks portal](https://uk.mathworks.com/academia/tah-portal/university-of-birmingham-40472096.html) (a Mathworks login will be needed)
 
+MATLAB online is not suitable for this course.
+
+
+## Course Data
 You will also need to download some data, which we will analyze using MATLAB:
 
 1. Download [matlab-novice-inflammation.zip](data/matlab-novice-inflammation.zip) and move the file to your Desktop.

@@ -146,6 +146,24 @@ and recall that an array must contain values all of the same type.
 In this case we convert the number to a string so that we
 can print an array of characters.
 
+::::::::::::::::::::::::::::::::::::: spoiler
+
+An alternative to using *char arrays*, as above, is to use *string scalars*. These are created using double inverted commas instead of single and each string is then counted as a single object. These can then easily be combined into a single string:
+
+```matlab
+>> str = "weight in kg: "
+str = 
+    "weight in kg: "
+
+>> combined_str = str + num2str(weight_kg)
+combined_str = 
+    "weight in kg: 55" 
+
+>> disp(combined_str)
+weight in kg: 55
+```
+:::::::::::::::::::::::::::::::::::::::::::::
+
 We can change the value of a variable by assigning it a new one:
 
 ```matlab
@@ -200,6 +218,16 @@ To remove a variable from MATLAB, use the `clear` command:
 Your variables are:
 
 a  b  weight_kg
+```
+The *whos* command lists the variables but also gives additional information about the variables:
+
+```matlab
+>> whos
+  Name           Size            Bytes  Class     Attributes
+
+  a              1x3                24  double              
+  b              2x3                48  double              
+  weight_kg      1x1                 8  double 
 ```
 
 Alternatively, we can look at the **Workspace**.
@@ -344,7 +372,7 @@ ans =
 ```
 
 The output tells us that the variable `patient_data`
-refers to a table of values
+refers to an array of values
 that has 60 rows and 40 columns.
 
 MATLAB stores *all* data in the form of multi-dimensional arrays. For example:
@@ -383,6 +411,12 @@ you need to tell MATLAB explicitly. For example, the command,
 
 assigns the value `325` to the name `x`, storing it as a 16-bit signed
 integer.
+
+::::::::::::::::::::::::::::::::::::::: instructor
+
+Info on [data types]( https://uk.mathworks.com/help/releases/R2025b/matlab/data-types.html?searchHighlight=data+types&s_tid=doc_srchtitle )
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 

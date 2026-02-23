@@ -42,6 +42,15 @@ To begin tackling this lesson, you will need to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::: instructor
+
+View data as text file
+
+Row: Information for single patient
+Column: Successive days
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## Overview of the data
 
 We are studying inflammation in patients who have been given a new treatment for arthritis,
